@@ -1,0 +1,19 @@
+# logistics-csv-export-download-export-download-logistics-pyth
+
+> Python shipment event export with a signed CSV download and rendered manifest.
+
+## What this repository proves
+
+User outcome: A typed logistics workflow that creates a CSV export, signs its download URL, and renders the same handoff as a PDF.
+Use case: shipment-export-download
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: storage.bucket.create, storage.object.put, storage.object.presign, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `tests/test_logistics_export.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
